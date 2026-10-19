@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Before &amp; After</title>
+<meta name="theme-color" content="#1328a6">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Before &amp; After">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&family=Libre+Baskerville:wght@700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div class="logo">Before <span>&amp;</span> After</div>
+    <div class="bank"><small>Your bank</small><b id="bank">$0</b></div>
+  </header>
+
+  <main id="home">
+    <section>
+      <h2 class="label">Pick a category</h2>
+      <div class="board" id="board"></div>
+    </section>
+
+    <section class="gen" style="margin-top:20px">
+      <h2>Build a round</h2>
+      <p>Type a subject or tap a topic. The game pairs up phrases that share a word and writes the clues for you.</p>
+      <form class="gen-row" id="buildForm">
+        <input type="text" id="topic" placeholder="e.g. music, King, Seattle, Elvis" autocomplete="off" maxlength="60">
+        <button class="btn" id="buildBtn" type="submit">Play</button>
+      </form>
+      <div class="ideas" id="ideas"></div>
+      <div class="count" id="count" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <main id="play" hidden>
+    <div class="play-head">
+      <div class="cat" id="playCat"></div>
+      <button class="btn ghost" id="quit" type="button" style="padding:8px 12px;font-size:15px">Board</button>
+    </div>
+    <div class="ladder" id="ladder" style="margin-top:12px"></div>
+    <div class="clue" id="clue" style="margin-top:12px">
+      <div class="val" id="clueVal"></div>
+      <div class="txt" id="clueTxt"></div>
+    </div>
+
+    <form class="guess" id="guessForm" style="margin-top:14px">
+      <input type="text" id="guess" placeholder="Type your answer (optional)" autocomplete="off" autocapitalize="off" spellcheck="false">
+      <button class="btn" type="submit" id="guessBtn">Reveal</button>
+    </form>
+
+    <div class="answer" id="answer" hidden style="margin-top:14px">
+      <div class="verdict" id="verdict"></div>
+      <div class="response" id="response"></div>
+      <div class="parts" id="parts"></div>
+      <div class="yours" id="yours"></div>
+      <div class="actions">
+        <button class="btn right" id="gotIt" type="button">I got it</button>
+        <button class="btn wrong" id="missed" type="button">I missed it</button>
+      </div>
+    </div>
+  </main>
+
+  <main id="done" hidden>
+    <div class="summary">
+      <h2 class="label" id="doneCat" style="margin:0"></h2>
+      <div class="big" id="doneScore"></div>
+      <p id="doneLine"></p>
+      <div class="actions">
+        <button class="btn" id="again" type="button">Play again</button>
+        <button class="btn ghost" id="toBoard" type="button">Back to board</button>
+      </div>
+    </div>
+  </main>
+
+  <div class="foot">Rounds are five clues worth $200 to $1,000. Typed answers are checked loosely; you can always overrule. · <button class="linkish" id="resetBank" type="button">Reset bank</button></div>
+</div>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
