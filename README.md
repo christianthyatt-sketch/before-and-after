@@ -9,7 +9,9 @@ A Jeopardy!-style Before & After game. It's plain HTML, CSS and JavaScript with 
 | `index.html` | The page |
 | `style.css` | The look |
 | `app.js` | Game logic and the clue builder |
-| `data.js` | All the puzzles and the phrase bank. **Edit this to add your own.** |
+| `data.js` | Hand-written puzzles and the original phrase bank. **Edit this to add your own.** |
+| `more-phrases.js` | About 700 more phrases for the clue builder |
+| `topics-1.js` – `topics-4.js` | Phrases for your categories (anime, Disney, Marvel, music, Black classics, Nick, Broadway and more) |
 | `sw.js`, `manifest.webmanifest`, `icons/` | Let the game install on your home screen and run offline |
 
 ## Play on your computer
@@ -35,6 +37,10 @@ Your phone needs a web address to load the game from. You can host these files f
 - **Android (Chrome):** ⋮ menu → **Add to Home screen** or **Install app**.
 
 Open it once while you have signal. After that it runs offline, like an app.
+
+## Daily round
+
+The gold tile at the top gives you the same five puzzles all day. Finish it on back-to-back days to build a streak; miss a whole day and the streak resets. Your streak, bank and history are saved on the device you play on.
 
 ## Adding your own puzzles
 

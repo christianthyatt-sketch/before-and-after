@@ -24,19 +24,27 @@
   </header>
 
   <main id="home">
-    <section>
-      <h2 class="label">Pick a category</h2>
+    <section id="dailyWrap" class="solo"></section>
+
+    <section style="margin-top:20px">
+      <h2 class="label">Your categories</h2>
       <div class="board" id="board"></div>
     </section>
 
+    <section style="margin-top:20px">
+      <h2 class="label">Classic categories</h2>
+      <div class="board" id="classics"></div>
+    </section>
+
+    <section id="mixWrap" class="solo" style="margin-top:20px"></section>
+
     <section class="gen" style="margin-top:20px">
       <h2>Build a round</h2>
-      <p>Type a subject or tap a topic. The game pairs up phrases that share a word and writes the clues for you.</p>
+      <p>Type any word or name. The game finds puzzles that mention it.</p>
       <form class="gen-row" id="buildForm">
-        <input type="text" id="topic" placeholder="e.g. music, King, Seattle, Elvis" autocomplete="off" maxlength="60">
+        <input type="text" id="topic" placeholder="e.g. King, Beyoncé, Batman, Love" autocomplete="off" maxlength="60">
         <button class="btn" id="buildBtn" type="submit">Play</button>
       </form>
-      <div class="ideas" id="ideas"></div>
       <div class="count" id="count" aria-live="polite"></div>
     </section>
   </main>
@@ -84,6 +92,11 @@
   <div class="foot">Rounds are five clues worth $200 to $1,000. Typed answers are checked loosely; you can always overrule. · <button class="linkish" id="resetBank" type="button">Reset bank</button></div>
 </div>
 <script src="data.js"></script>
+<script src="more-phrases.js"></script>
+<script src="topics-1.js"></script>
+<script src="topics-2.js"></script>
+<script src="topics-3.js"></script>
+<script src="topics-4.js"></script>
 <script src="app.js"></script>
 </body>
 </html>

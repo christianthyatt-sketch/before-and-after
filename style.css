@@ -70,7 +70,7 @@ button { cursor: pointer; }
 }
 .tile:hover { background: var(--board-deep); }
 .tile .n { font-size: 12px; font-weight: 500; letter-spacing: .1em; color: var(--gold); text-shadow: none; }
-.tile.mix { grid-column: 1 / -1; min-height: 60px; background: var(--board-deep); }
+.tile.mix { background: var(--board-deep); }
 
 /* Generator */
 .gen { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 16px; display: flex; flex-direction: column; gap: 10px; }
@@ -154,3 +154,12 @@ input[type="text"] {
 .idea.on { background: var(--board); border-color: var(--board); color: #fff; }
 .count { font-family: var(--font-board); font-size: 15px; letter-spacing: .04em; color: var(--muted); }
 .count b { color: var(--fg); }
+
+/* Single full-width tiles (Daily, Mixed Bag) */
+.solo { background: #000; padding: 6px; border-radius: 6px; display: grid; }
+.solo .tile { min-height: 72px; }
+.tile.daily { background: var(--gold); color: var(--gold-ink); text-shadow: none; font-size: 24px; }
+.tile.daily .n { color: var(--gold-ink); opacity: .8; }
+.tile.daily.done { background: var(--board-deep); color: var(--board-ink); }
+.tile.daily.done .n { color: var(--gold); opacity: 1; }
+.tile .n { line-height: 1.25; }

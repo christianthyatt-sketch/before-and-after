@@ -1,7 +1,7 @@
 // Caches the app so it keeps working with no signal.
 // Bump VERSION whenever you change a file so phones pick up the update.
-const VERSION = "ba-v1";
-const FILES = ["./", "index.html", "style.css", "app.js", "data.js", "manifest.webmanifest", "icons/icon-192.png", "icons/icon-512.png", "icons/apple-touch-icon.png"];
+const VERSION = "ba-v3";
+const FILES = ["./", "index.html", "style.css", "app.js", "data.js", "more-phrases.js", "topics-1.js", "topics-2.js", "topics-3.js", "topics-4.js", "manifest.webmanifest", "icons/icon-192.png", "icons/icon-512.png", "icons/apple-touch-icon.png"];
 
 self.addEventListener("install", e => {
   e.waitUntil(caches.open(VERSION).then(c => c.addAll(FILES)).then(() => self.skipWaiting()));
