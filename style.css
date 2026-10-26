@@ -163,3 +163,12 @@ input[type="text"] {
 .tile.daily.done { background: var(--board-deep); color: var(--board-ink); }
 .tile.daily.done .n { color: var(--gold); opacity: 1; }
 .tile .n { line-height: 1.25; }
+
+/* Mixed Bag + Triple Threat side by side */
+.solo.duo { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px; }
+.tile.triple { background: #3a1a8c; }
+.rung.x3 { position: relative; }
+.rung.x3::after { content: "×3"; position: absolute; top: -9px; right: -4px; font-size: 11px; background: var(--gold); color: var(--gold-ink); border-radius: 999px; padding: 0 5px; line-height: 16px; }
+.clue .val .tag { display: block; font-size: 13px; letter-spacing: .14em; margin-bottom: 2px; }
+/* A lone last tile on a two-column board spans the row instead of leaving a gap */
+@media (max-width: 519px) { .board .tile:last-child:nth-child(odd) { grid-column: 1 / -1; } }

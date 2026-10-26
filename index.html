@@ -36,7 +36,7 @@
       <div class="board" id="classics"></div>
     </section>
 
-    <section id="mixWrap" class="solo" style="margin-top:20px"></section>
+    <section id="mixWrap" class="solo duo" style="margin-top:20px"></section>
 
     <section class="gen" style="margin-top:20px">
       <h2>Build a round</h2>
@@ -46,6 +46,18 @@
         <button class="btn" id="buildBtn" type="submit">Play</button>
       </form>
       <div class="count" id="count" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <main id="pick" hidden>
+    <div class="play-head">
+      <div class="cat" id="pickName"></div>
+      <button class="btn ghost" id="pickBack" type="button" style="padding:8px 12px;font-size:15px">Board</button>
+    </div>
+    <section id="pickAll" class="solo" style="margin-top:12px"></section>
+    <section style="margin-top:20px">
+      <h2 class="label">Or go specific</h2>
+      <div class="board" id="pickSubs"></div>
     </section>
   </main>
 
@@ -97,6 +109,9 @@
 <script src="topics-2.js"></script>
 <script src="topics-3.js"></script>
 <script src="topics-4.js"></script>
+<script src="topics-5.js"></script>
+<script src="topics-6.js"></script>
+<script src="alt-clues.js"></script>
 <script src="app.js"></script>
 </body>
 </html>

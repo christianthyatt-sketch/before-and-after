@@ -11,7 +11,8 @@ A Jeopardy!-style Before & After game. It's plain HTML, CSS and JavaScript with 
 | `app.js` | Game logic and the clue builder |
 | `data.js` | Hand-written puzzles and the original phrase bank. **Edit this to add your own.** |
 | `more-phrases.js` | About 700 more phrases for the clue builder |
-| `topics-1.js` – `topics-4.js` | Phrases for your categories (anime, Disney, Marvel, music, Black classics, Nick, Broadway and more) |
+| `topics-1.js` – `topics-6.js` | Phrases for your categories, focus picks (Naruto, Pixar, Dog Breeds…) and new channels |
+| `alt-clues.js` | Second descriptions for the most-used phrases, so repeats read differently |
 | `sw.js`, `manifest.webmanifest`, `icons/` | Let the game install on your home screen and run offline |
 
 ## Play on your computer
@@ -42,6 +43,10 @@ Open it once while you have signal. After that it runs offline, like an app.
 
 The gold tile at the top gives you the same five puzzles all day. Finish it on back-to-back days to build a streak; miss a whole day and the streak resets. Your streak, bank and history are saved on the device you play on.
 
+## Triples and focus picks
+
+The $1,000 clue in most rounds is a **Triple Before & After** (three phrases chained together), marked ×3. The **Triple Threat** tile plays five in a row. Categories with a "focus picks" note open a menu: play the whole category, or narrow it to one show or topic.
+
 ## Adding your own puzzles
 
 Open `data.js` in any text editor.
@@ -50,6 +55,6 @@ Open `data.js` in any text editor.
   `["Hotel California", "California Raisins", "Eagles classic, followed by claymation singers of ..."],`
 - **A phrase for the clue builder:** add a line to `PHRASES`:
   `["Space Needle", "Seattle's 605-foot observation tower", "p"],`
-  The game automatically pairs it with any phrase that starts or ends with the same word. Keep the description free of the phrase's own words, or that pairing gets skipped. The tag letters are listed at the top of the file.
+  The game automatically pairs it with any phrase that starts or ends with the same word. To put it in a focus pick, use that pick's tag, like `anime.naruto` or `vet.dogs` (listed at the top of `topics-5.js`). Keep the description free of the phrase's own words, or that pairing gets skipped. The tag letters are listed at the top of the file.
 
 If the game is hosted, upload the changed file again. Then change `VERSION` in `sw.js` (for example to `ba-v2`) so phones download the update instead of using the old saved copy.

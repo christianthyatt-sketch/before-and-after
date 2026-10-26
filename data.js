@@ -162,7 +162,7 @@ const PHRASES = [
   ["Day Care", "where working parents drop off toddlers", "x"],
   // Dog
   ["Hot Dog", "ballpark frank", "f"],
-  ["Hound Dog", "Elvis hit about a critter that's \"cryin' all the time\"", "u"],
+  ["Hound Dog", "Elvis hit first recorded by Big Mama Thornton", "u"],
   ["Corn Dog", "battered sausage on a stick at the state fair", "f"],
   ["Clifford the Big Red Dog", "giant crimson canine of children's books", "b"],
   ["Dog Days of Summer", "the sultriest stretch of the year", "x"],
@@ -188,7 +188,7 @@ const PHRASES = [
   // Blue
   ["Rhapsody in Blue", "Gershwin piece that opens with a clarinet glissando", "u"],
   ["Kind of Blue", "Miles Davis's best-selling jazz album", "u"],
-  ["Blue Moon", "Rodgers and Hart standard about the second full moon in a month", "u"],
+  ["Blue Moon", "Rodgers and Hart standard that Billie Holiday and Elvis both recorded", "u"],
   ["Blue Suede Shoes", "Carl Perkins rockabilly hit Elvis covered", "u"],
   ["Blue Whale", "largest animal ever known to have lived", "a"],
   ["Blue's Clues", "kids' show where Steve follows paw prints", "t"],
@@ -214,7 +214,7 @@ const PHRASES = [
   ["Bad Moon Rising", "Creedence Clearwater Revival song", "u"],
   ["Breaking Bad", "AMC drama about chemistry teacher Walter White", "t"],
   ["Keith Moon", "wild drummer of The Who", "u n"],
-  ["Harvest Moon", "full moon nearest the autumn equinox", "x"],
+  ["Harvest Moon", "bright lunar glow near the autumn equinox", "x"],
   ["Sailor Moon", "anime heroine Usagi Tsukino", "t"],
   ["Moon River", "song Audrey Hepburn sings in \"Breakfast at Tiffany's\"", "u m"],
   ["Mississippi River", "mighty waterway that empties into the Gulf", "p"],
@@ -287,7 +287,7 @@ const PHRASES = [
   ["Street Fighter", "Capcom fighting game with Ryu and Chun-Li", "g"],
   // Rock, Lobster, Roll, Egg, Island
   ["Plymouth Rock", "where the Pilgrims supposedly stepped ashore in 1620", "h p"],
-  ["Chris Rock", "comedian who narrated \"Everybody Hates Chris\"", "n t"],
+  ["Chris Rock", "comedian who hosted the Oscars in 2005 and 2016", "n t"],
   ["Kid Rock", "singer of \"All Summer Long\"", "u n"],
   ["School of Rock", "Jack Black film about a fake substitute teacher", "m"],
   ["Rock Lobster", "the B-52's party anthem", "u"],
